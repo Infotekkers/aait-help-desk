@@ -4,10 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "prepare": "prepare.sh",
     "dev": "parcel src/index.html",
     "format": "prettier \"src/**/*.{js,html}\" --write",
     "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
+      "prettier --write"
+    ]
   },
   "keywords": [],
   "author": "",
@@ -17,6 +23,8 @@
     "autoprefixer": "^9.8.6",
     "eslint": "^8.0.1",
     "eslint-config-prettier": "^8.3.0",
+    "husky": "^7.0.2",
+    "lint-staged": "^11.2.3",
     "parcel": "^1.12.3",
     "postcss": "^7.0.35",
     "prettier": "^2.4.1",
@@ -24,6 +32,7 @@
   },
   "dependencies": {
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^5.3.0"
   }
 }
