@@ -12,7 +12,7 @@ const App = () => (
         <h1>TODO: Landing Page</h1>
       </Route>
   <Route path="/curriculum">
-        <Curriculum />
+      <Curriculum />
       </Route>
     </Switch>
   </BrowserRouter>
