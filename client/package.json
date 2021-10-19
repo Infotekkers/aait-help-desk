@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "prepare": "cd .. && husky install client/.husky && husky add client/.husky/pre-commit \"npx --no-install lint-staged\"",
+    "prepare": "prepare.sh",
     "dev": "parcel src/index.html",
     "format": "prettier \"src/**/*.{js,html}\" --write",
     "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
