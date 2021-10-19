@@ -4,11 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "prepare": "cd .. && husky install client/.husky && husky add .husky/precommit \"npx --no-install lint-staged\"",
     "dev": "parcel src/index.html",
     "format": "prettier \"src/**/*.{js,html}\" --write",
     "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "cd .. && husky install client/.husky"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
