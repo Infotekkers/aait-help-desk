@@ -13,7 +13,7 @@ const App = () => (
 </Route>
 <Route path="/curriculum">
   <Curriculum />
-</Route>
+  </Route>
 </Switch>
 </BrowserRouter>
 );
